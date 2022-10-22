@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+  border: 1px solid;
+  width: 100%;
+  /* The container determains the size. */
+  .loading-overlay {
+    /* We'll render the overlay on top of the Unity Application. */
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/img/loadingBG.webp');
+    /* We'll set the following Flex properties in order to center the text. */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .unity {
+    /* The Unity Application matches it size to the container. */
+    width: 100%;
+    height: 100%;
+  }
+}
